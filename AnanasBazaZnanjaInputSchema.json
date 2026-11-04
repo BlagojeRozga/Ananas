@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "string",
+      "description": "The customer's question, restated as one clear standalone question in standard Serbian to search the knowledge base. Keep the topic and intent; leave out specific product names, brands and quantities. For a short follow-up, carry the topic from earlier turns and ask what is new in this message."
+    },
+    "wrapup": {
+      "type": "string",
+      "description": "The knowledge-base wrap-up code this question belongs to. Pick the single best-matching value; this guarantees that whole topic is loaded for you. Use empty string only if genuinely none fits.",
+      "enum": [
+        "",
+        "A+pitanja - Uslovi",
+        "Dodatne usluge - Kuponi",
+        "IPS plaćanje",
+        "Info - Fiskalni racun",
+        "Info - Garancija",
+        "Info - Način i rok dostave",
+        "Info - Načini plaćanja",
+        "Info - Ponuda/Asortiman",
+        "Odustanak od kupovine - Instrukcija",
+        "Odustanak od kupovine - Status i rokovi realizacije",
+        "Plaćanje karticom",
+        "Plaćanje karticom na paketomatu i paket zoni",
+        "Plaćanje kuriru",
+        "Plaćanje na rate",
+        "Plaćanje poklon karticom",
+        "Poklon kartica - Informacije",
+        "Poklon kartica - Tehnicke poteskoce",
+        "Porudzbina - Instrukcije za kreiranje porudzbine",
+        "Porudzbina - Trenutni status porudzbine",
+        "Prodavci - Ponuda za saradnju",
+        "Refundacija sredstava",
+        "Reklamacija - Status i rokovi realizacije",
+        "Reklamacije - Instrukcija",
+        "Sajt - Logovanje i nalog",
+        "Tehnicke poteskoce - Kuponi",
+        "Tehnicke poteskoce - Placanje karticom",
+        "Vaučeri - Otkazana porudžbina",
+        "Vaučeri - Rođendanski vaučeri",
+        "Vaučeri i kuponi - Problem sa primenom",
+        "Vaučeri i kuponi - Uslovi i način korišćenja"
+      ]
+    }
+  },
+  "required": ["query"]
+}
